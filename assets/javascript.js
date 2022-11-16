@@ -40,3 +40,25 @@ $(document).ready(function(){
   // I want the time to display: month, day, year and time. User needs to refresh to update time of day
   const systemTime = moment().format("dddd, MMMM DD, YYYY - hh:mm a")
   currentDay.text(systemTime)
+
+  
+  // The 24-hour clock will allow when the current time is < than to determine past, present and future
+  function displayColorsArr(){
+    for (var i=0; i < hourTimeArr.length; i++){
+        
+        var currentTimeArr = $("#" + hourTimeArr[i])
+        // Determines the past
+        if(currentStage> hourTimeArr[i]){
+            
+            currentTimeArr.addClass("past")
+        }  
+        // If not past, then present
+        else if (currentStage === hourTimeArr[i]){
+        currentTimeArr.addClass("present")
+        }
+        // Else all other will be considered future
+        else {
+        currentTimeArr.addClass("future")
+        }
+    }
+}
