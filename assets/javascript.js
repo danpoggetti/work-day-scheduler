@@ -59,6 +59,10 @@ $(document).ready(function(){
         // Else all other will be considered future
         else {
         currentTimeArr.addClass("future")
-        }
-    }
+        }}
 }
+
+  
+displayColorsArr()
+  
+  
