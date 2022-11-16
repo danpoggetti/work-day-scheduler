@@ -58,13 +58,21 @@
 I was tasked to create a work day schedulder app so that a user can help keep track of their daily tasks.
 
 I want a user to be able to:
-<ol>
-<li>When a user searchs for a city:<br>They are presented with the current and future weather conditions for the searched city and that city searched gets placed into a search history.</li>
-<li>When a user views the current weather conditions for the city:<br>They are presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed.</li>
-<li>When a user views future weather condtions for that city:<br>They are presented with a 5-day forecast that displays the date, an icon representing weather condtions, the temperature, the wind speed, and the humidity.</li>
-<li>When a user clicks on a city in the search history:<br>They will be presented with current and future conditions for the city.</li>
-</ol>
-
+<br>
+GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with time blocks for standard business hours
+WHEN I view the time blocks for that day
+THEN each time block is color-coded to indicate whether it is in the past, present, or future
+WHEN I click into a time block
+THEN I can enter an event
+WHEN I click the save button for that time block
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events persist
+<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +174,7 @@ Demo Link: [https://danpoggetti.github.io/work-day-scheduler/]
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I want to acknowledge the many great and vast resouces that adided us in creating this weather dashboard app.
+I want to acknowledge the many great and vast resouces that aided me in the work day scheduler app.
 
 * [Google](https://www.google.com)
 * [YouTube](https://www.youtube.com)
