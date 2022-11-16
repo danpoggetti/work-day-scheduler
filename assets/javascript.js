@@ -37,3 +37,6 @@ $(document).ready(function(){
   const currentDay = $("#currentDay")
   
   
+  // I want the time to display: month, day, year and time. User needs to refresh to update time of day
+  const systemTime = moment().format("dddd, MMMM DD, YYYY - hh:mm a")
+  currentDay.text(systemTime)
