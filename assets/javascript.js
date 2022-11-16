@@ -29,3 +29,11 @@ $(document).ready(function(){
   $('#four_pm .description').val(localStorage.getItem('four_pm'));
   $('#five_pm .description').val(localStorage.getItem('five_pm'));
   });
+
+  
+  // Set the text area id to 24-hour clock
+  const hourTimeArr = [9, 10, 11, 12, 13, 14, 15, 16, 17]
+  const currentStage = moment().hour()
+  const currentDay = $("#currentDay")
+  
+  
