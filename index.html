@@ -12,72 +12,106 @@
   </head>
 
   <body>
+    
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p class="lead">Enjoy this simple calendar app to help your day!</p>
       <p id="currentDay" class="lead"></p>
     </header>
 
     <div class="container">
-      <!-- Timeblocks for 8am to 6pm hour work day -->
- 
-      <!-- 8am-9am hour -->
-      <div class = "eight-am">
 
+      <!-- Timeblocks for 9am through 6pm workday below -->
+
+      <!-- 9am - 10 am -->
+      <div id="nine_am" class="row time-block">
+        <div class="col-md-1 hour">
+          9am
+        </div>
+        <textarea id="9" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
       </div>
 
-      <!-- 9am-10am hour -->
-      <div class = "nine-am">
-
+      <!-- 10am - 11am -->
+      <div id="ten_am" class="row time-block">
+        <div class="col-md-1 hour">
+          10am
+        </div>
+        <textarea id="10" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
       </div>
-
-      <!-- 10am-11am hour -->
-      <div class = "ten-am">
-
-      </div>
-
-      <!-- 11am-12pm hour -->
-      <div class = "eleven-am">
-
-      </div>
-
-      <!-- 12pm-1pm hour -->
-      <div class = "twelve-pm">
-
-      </div>
-
-      <!-- 1pm-2pm hour -->
-      <div class = "one-pm">
-
-      </div>
-
-      <!-- 2pm-3pm hour -->
-      <div class = "two-pm">
-
-      </div>
-
-      <!-- 3pm-4pm hour -->
-      <div class = "three-pm">
-
-      </div>
-
-      <!-- 4pm-5pm hour -->
-      <div class = "four-pm">
-
-      </div>
-
-      <!-- 5pm-6pm hour -->
-      <div class = "five-pm">
-
-      </div>
-
       
+      <!-- 11am - 12pm -->
+      <div id="eleven_am" class="row time-block">
+        <div class="col-md-1 hour">
+          11am
+        </div>
+        <textarea id="11" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
+      </div>
+
+      <!-- 12pm - 1pm -->
+      <div id="twelve_pm" class="row time-block">
+        <div class="col-md-1 hour">
+          12pm
+        </div>
+        <textarea id ="12" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
+      </div>
+      
+      <!-- 1pm - 2pm -->
+      <div id="one_pm" class="row time-block">
+        <div class="col-md-1 hour">
+          1pm
+        </div>
+        <textarea id="13" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
+      </div>
+      
+      <!-- 2pm - 3pm -->
+      <div id="two_pm" class="row time-block">
+        <div class="col-md-1 hour">
+          2pm
+        </div>
+        <textarea id="14" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
+      </div>
+      
+      <!-- 3pm - 4pm -->
+      <div id="three_pm" class="row time-block">
+        <div class="col-md-1 hour">
+          3pm
+        </div>
+        <textarea id="15" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
+      </div>
+      
+      <!-- 4pm - 5pm -->
+      <div id="four_pm" class="row time-block">
+        <div class="col-md-1 hour">
+          4pm
+        </div>
+        <textarea id="16" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></button>
+      </div>
+      
+      <!-- 5pm - 6pm -->
+      <div id="five_pm" class="row time-block">
+        <div class="col-md-1 hour">
+          5pm
+        </div>
+        <textarea id="17" class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fa-sharp fa-solid fa-clipboard-check"></i></i></button>
+      </div>
+
     </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Time blocks have ended -->
+    
+    <!-- JavaScript files are below -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/javascript.js"></script>
+  
   </body>
+
 </html>
