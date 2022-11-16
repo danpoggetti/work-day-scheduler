@@ -17,3 +17,15 @@ $(document).ready(function(){
       }, 1000);
     });
     
+  // show saved items from LocalStorage
+  
+  $('#nine_am .description').val(localStorage.getItem('nine_am'));
+  $('#ten_am .description').val(localStorage.getItem('ten_am'));
+  $('#eleven_am .description').val(localStorage.getItem('eleven_am'));
+  $('#twelve_pm .description').val(localStorage.getItem('tweleve_pm'));
+  $('#one_pm .description').val(localStorage.getItem('one_pm'));
+  $('#two_pm .description').val(localStorage.getItem('two_pm'));
+  $('#three_pm .description').val(localStorage.getItem('three_pm'));
+  $('#four_pm .description').val(localStorage.getItem('four_pm'));
+  $('#five_pm .description').val(localStorage.getItem('five_pm'));
+  });
